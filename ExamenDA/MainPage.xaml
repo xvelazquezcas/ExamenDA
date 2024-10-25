@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenDA.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Calculadora!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Entry x:Name="Num1" Placeholder="Numero 1"  Keyboard="Numeric" />
+        <Entry x:Name="Num2" Placeholder="Numero 2"  Keyboard="Numeric"/>
+        <Entry x:Name="Resultado" Placeholder="Resultado" VerticalOptions="Center" />
+        <Label Text="Resultado"/>
+
+        <Button Text="Sumar" Clicked="Sumar_Clicked"/>
+        <Button Text="Restar" Clicked="Restar_Clicked" />
+        <Button Text="Dividir" Clicked="Dividir_Clicked" />
+        <Button Text="Multiplicar" Clicked="Multiplicar_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>
